@@ -6,8 +6,17 @@
 #
 
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+
+if [[ -s "${ZDOTDIR:-$HOME}/git/dotfiles/libs/prezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/git/dotfiles/libs/prezto/init.zsh"
 fi
 
 # Customize to your needs...
+
+
+source "${ZDOTDIR:-$HOME}/git/dotfiles/zsh/aliases.zsh"
+
+autoload -Uz promptinit
+promptinit
+prompt steeef
+
